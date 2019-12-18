@@ -1,0 +1,15 @@
+﻿<Window x:Class="ScreenShooter.ScreenShooterMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenShooter"
+        mc:Ignorable="d"
+        Title="ScreenShooter" Height="105" Width="250" ResizeMode="CanMinimize" Loaded="Window_Loaded" Icon="xenon.ico">
+    <UniformGrid Rows="2" Columns="2">
+        <Button x:Name="B_takeScrennshot" Content="Scrennshot" Click="b_Screenshot_Click" Margin="5" ToolTip="Nimmt einen Screenshot auf. Wurde vorher keine Region festgelegt, wird der ganze Bildschirm aufgenommen."/>
+        <Button x:Name="B_SelectRegion" Content="Select Region" Click="b_SelectRegion_Click" Margin="5" ToolTip="Legt den aufzunehmenden Bereich des Screenshots fest."/>
+        <Button x:Name="B_SelectOCR" Content="Select OCR Region" Click="B_SelectOCR_Click" Margin="5" ToolTip="Legt den Bereich für die OCR fest"/>
+        <Button x:Name="B_Folder" Content="Set Save Folder" Click="B_Folder_Click" Margin="5" ToolTip="Legt den Speicherort der Screenshots fest"/>        
+    </UniformGrid>
+</Window>
